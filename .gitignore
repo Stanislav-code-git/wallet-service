@@ -1,38 +1,48 @@
+# === Build output ===
 target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+build/
+out/
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
-*.iws
+# === Maven Wrapper ===
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+!.mvn/wrapper/MavenWrapperDownloader.java
+
+# === IntelliJ IDEA ===
+.idea/
 *.iml
+*.iws
 *.ipr
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
+# === Eclipse ===
 .project
-.settings
+.classpath
+.settings/
 .springBeans
 .sts4-cache
 
-### NetBeans ###
+# === NetBeans ===
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
+# === VS Code ===
 .vscode/
 
-### Mac OS ###
+# === OS files ===
 .DS_Store
+Thumbs.db
+
+# === Logs & temp ===
+*.log
+*.tmp
+*.swp
+
+# === Docker ===
+/docker-data/
+/.docker/
+
+# === Environment variables ===
+.env
